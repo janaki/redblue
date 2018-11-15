@@ -1,5 +1,4 @@
 # Copyright 2016 Google Inc.
-#
 # Licensed under the Apache License, Version 2.0 (the "License");
 # you may not use this file except in compliance with the License.
 # You may obtain a copy of the License at
@@ -18,7 +17,7 @@ import webapp2
 class MainPage(webapp2.RequestHandler):
     def get(self):
         self.response.headers['Content-Type'] = 'text/html'
-        self.response.write('<body style=\'background-color: red\'>Hello, World!</body>')
+        self.response.write('<body style=\'background-color: blue\'>Hello, World!</body>')
 
 
 app = webapp2.WSGIApplication([
